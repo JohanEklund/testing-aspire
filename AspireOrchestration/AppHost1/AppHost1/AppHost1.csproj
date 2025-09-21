@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Sdk Name="Aspire.AppHost.Sdk" Version="9.3.1" />
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UserSecretsId>eb12083c-a2ee-4c9d-a27c-584e8dc08cdf</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="9.4.2" />
+    <PackageReference Include="Aspire.Hosting.Azure.Functions" Version="9.4.2-preview.1.25428.12" />
+    <PackageReference Include="Aspire.Hosting.Azure.ServiceBus" Version="9.4.2" />
+    <PackageReference Include="Aspire.Hosting.Azure.Storage" Version="9.4.2" />
+    <PackageReference Include="Aspire.Hosting.SqlServer" Version="9.4.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../../../Solution1/WebApplication1/App1.API.csproj" />
+    <ProjectReference Include="../../../Solution1/App1.Function/App1.Function.csproj" />
+    <ProjectReference Include="../../../Solution2/App2.API/App2.API.csproj" />
+    
+    <ProjectReference Include="../App1.MigrationService/App1.MigrationService.csproj" />
+    <ProjectReference Include="../App2.MigrationService/App2.MigrationService.csproj" />
+    <ProjectReference Include="../PublisherConsole/PublisherConsole.csproj" />
+    <ProjectReference Include="../../../Solution2/App2.Function/App2.Function.csproj" />
+  </ItemGroup>
+
+</Project>

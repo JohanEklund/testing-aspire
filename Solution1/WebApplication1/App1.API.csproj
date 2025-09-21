@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\App1.CommonDependencies\App1.CommonDependencies.csproj" />
+    <ProjectReference Include="..\App1.Infrastructure\App1.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
